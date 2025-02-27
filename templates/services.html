@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediBot - Services</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">MediBot</div>
+        <div class="nav-links">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('services') }}" class="active">Services</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+        </div>
+    </nav>
+
+    <div class="services-container gradient-border">
+        <h1>Our Services</h1>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-stethoscope"></i>
+                <h3>Symptom Check</h3>
+                <p>Get instant analysis of your symptoms using our advanced AI system</p>
+                <a href="{{ url_for('home') }}" class="service-btn">Try Now</a>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-calendar-check"></i>
+                <h3>Appointment Booking</h3>
+                <p>Schedule appointments with specialized doctors based on your condition</p>
+                <a href="#" class="service-btn">Book Now</a>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-pills"></i>
+                <h3>Medication Reminders</h3>
+                <p>Never miss your medications with our smart reminder system</p>
+                <a href="#" class="service-btn">Set Reminder</a>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-ambulance"></i>
+                <h3>Emergency Services</h3>
+                <p>Quick access to emergency help and nearby hospitals</p>
+                <a href="#" class="service-btn">Emergency</a>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-history"></i>
+                <h3>Health Records</h3>
+                <p>Maintain your digital health records securely</p>
+                <a href="#" class="service-btn">View Records</a>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-comments"></i>
+                <h3>24/7 Chat Support</h3>
+                <p>Get instant medical guidance through our AI chatbot</p>
+                <a href="{{ url_for('home') }}" class="service-btn">Chat Now</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MediBot</h3>
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDI5NXEyZ2R1M2tzNXgxOWprNzQyeWRvNnBqbDVxYnJ4YjZ1Y2twbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/dMLmQfCO7lCA2gX3tw/giphy.gif" 
+                     alt="Medical Bot Animation" 
+                     class="bot-animation">
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('services') }}">Services</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-envelope"></i> support@medibot.com</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MediBot. All rights reserved.</p>
+            <p>Project by: Shubham Patel, Hardik Rajpurohit, Shreyash Singh</p>
+            <p>Copyright &copy; 2024 Shubham Patel, Hardik Rajpurohit, Shreyash Singh</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
